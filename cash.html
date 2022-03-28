@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap Links -->
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <!-- Font Aweasome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fav Icon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>RIMAK</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-transparent" style="background-color: #000; color: #fff !important; position: fixed; z-index: 1000; width: 100%;">
+    <a class="navbar-brand text-white" data-toggle="modal" data-target="#profileModel" href="#"><img src="img/icons8-user-24.png" width="30px" alt=""></a>
+    <a class="navbar-brand text-white" href="#"><img src="img/logo.png" width="30px" alt=""></a>
+    
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "><img src="img/menu.png" alt=""></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <br>
+      <ul class="navbar-nav mr-auto text-right">
+        <li class="nav-item">
+          <button type="button" class="btn border mb-2 text-white resPLogo text-left" data-toggle="modal" data-target="#loginModel">تسجيل</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn border  text-white resPLogo text-left" data-toggle="modal" data-target="#signupModel">تسجيل الدخول</button>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" style="font-size: 13px;" href="#">منطقه العرض</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 13px;" href="#">تسوق بالسياره</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            التصميم الداخلي
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  style="font-size: 13px;"href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            الخارجيات
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            اضواء السياره
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            تصفيف السياره
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            العنايه بالسياره
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            معدات الدراجه
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            ملحقات القياده
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            اكسسوارات الدراجه
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container resCarBag">
+        <div class="text-right">
+            <ul class="anotherUlFive">
+                <li><h2>عربه التسوق</h2></li>
+                <li class="bordX"></li>
+                <li><h5> طريقه العرض  <img src="img/squares.png" width="20px" alt=""> </h5> </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-4 text-center">
+
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="img/carseat.webp" class="card-img-top carsetImage" alt="...">
+                  <div class="card-body text-center">
+                    <div class=" divUlListFour">
+                      <ul class="ullistFour" style="margin-right: -40px;">
+                        <li><a href="">منتجاتنا</a></li>
+                      </ul>
+                      <ul class="stars">
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <li><a href="">تفاصيل المنتج</a></li>
+                      </ul>
+                      <ul class="specialPrice">
+                        <li>$49.50</li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <li><a href="">تفاصيل المنتج</a></li>
+                      </ul>
+                      <ul class="oldPrice">
+                        <li>$55.50</li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <button class="btn btnCombonentfive"> <img src="img/closeTwo.png" class="resCloseTwo" width="30px;" alt=""> <img src="img/edits.png" width="30px" alt=""></button>
+                      </ul>
+                      <ul class="oldPrice">
+                        <li>
+                            <select class="custom-select my-1 mr-sm-2 border-danger" id="inlineFormCustomSelectPref">
+                                <option selected>1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                                <option value="5">6</option>
+                                <option value="6">7</option>
+                                <option value="7">8</option>
+                                <option value="8">9</option>
+                                <option value="9">10</option>
+                              </select>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="img/carseat.webp" class="card-img-top carsetImage" alt="...">
+                  <div class="card-body text-center">
+                    <div class=" divUlListFour">
+                      <ul class="ullistFour" style="margin-right: -40px;">
+                        <li><a href="">منتجاتنا</a></li>
+                      </ul>
+                      <ul class="stars">
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <li><a href="">تفاصيل المنتج</a></li>
+                      </ul>
+                      <ul class="specialPrice">
+                        <li>$49.50</li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <li><a href="">تفاصيل المنتج</a></li>
+                      </ul>
+                      <ul class="oldPrice">
+                        <li>$55.50</li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <button class="btn btnCombonentfive"> <img src="img/closeTwo.png" class="resCloseTwo" width="30px;" alt=""> <img src="img/edits.png" width="30px" alt=""></button>
+                      </ul>
+                      <ul class="oldPrice">
+                        <li>
+                            <select class="custom-select my-1 mr-sm-2 border-danger" id="inlineFormCustomSelectPref">
+                                <option selected>1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                                <option value="5">6</option>
+                                <option value="6">7</option>
+                                <option value="7">8</option>
+                                <option value="8">9</option>
+                                <option value="9">10</option>
+                              </select>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+      
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="img/carseat.webp" class="card-img-top carsetImage" alt="...">
+                  <div class="card-body text-center">
+                    <div class=" divUlListFour">
+                      <ul class="ullistFour" style="margin-right: -40px;">
+                        <li><a href="">منتجاتنا</a></li>
+                      </ul>
+                      <ul class="stars">
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                        <li><img src="img/star.png" width="11px" alt=""></li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <li><a href="">تفاصيل المنتج</a></li>
+                      </ul>
+                      <ul class="specialPrice">
+                        <li>$49.50</li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <li><a href="">تفاصيل المنتج</a></li>
+                      </ul>
+                      <ul class="oldPrice">
+                        <li>$55.50</li>
+                      </ul>
+                    </div>
+                    <div class=" divUlListFour">
+                      <ul class="ullistFive" style="margin-right: -40px;">
+                        <button class="btn btnCombonentfive"> <img src="img/closeTwo.png" class="resCloseTwo" width="30px;" alt=""> <img src="img/edits.png" width="30px" alt=""></button>
+                      </ul>
+                      <ul class="oldPrice">
+                        <li>
+                            <select class="custom-select my-1 mr-sm-2 border-danger" id="inlineFormCustomSelectPref">
+                                <option selected>1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                                <option value="5">6</option>
+                                <option value="6">7</option>
+                                <option value="7">8</option>
+                                <option value="8">9</option>
+                                <option value="9">10</option>
+                              </select>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mb-4 ">
+                <div class="cards marketSummary">
+                  <div class="card-body text-center">
+                        <ul class="divUlListsix">
+                            <li class="elone">ملخص التسوق</li>
+                            <li class="elone">تقدير الشحن والضرائب</li>
+                            <li class="elthree">ادخل وجهتك للحصول علي تقدير الشحن</li>
+                        </ul>
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup"></label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="ادخل كود الخصم">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text suqarCode">تطبيق</div>
+                              </div>
+                            </div>
+                          </div>
+                        <div class=" divUlListFour">
+                            <ul class="ullistFive" style="margin-right: -40px;">
+                                <li><a href="">مجموع السعر</a></li>
+                            </ul>
+                            <ul class="lastPrice">
+                                <li>$55.50</li>
+                            </ul>
+                        </div>
+
+                        <div class=" divUlListFour">
+                            <ul class="ullistFive" style="margin-right: -40px;">
+                                <li><a href="">سعر التوصيل</a></li>
+                            </ul>
+                            <ul class="lastPrice">
+                                <li>$55.50</li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class=" divUlListFour">
+                            <ul class="ullistFive" style="margin-right: -40px;">
+                                <li><a href="">اجمالي الفاتورة</a></li>
+                            </ul>
+                            <ul class="lastPrice">
+                                <li>552</li>
+                            </ul>
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup"></label>
+                            <div class="input-group mb-2">
+                                <button class="btn btnCombonentEleven"> <img src="img/paypal.png" width="25px" alt="">  check out with  </button>                      <div class="input-group-prepend">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup"></label>
+                            <div class="input-group mb-2">
+                                <button class="btn btnCombonentEleven">mathod another payment</button>
+                            </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+    </div>
+    
+    <footer class="footerF">
+      <div class="containerF">
+          <hr class="w-100 bg-white">
+          <br>
+          <div class="rowF text-right">
+              <div class="footer-col">
+                  <h4>ريماك</h4>
+                  <ul>
+                      <li><a href="">سياسه الخصوصيه</a></li>
+                      <li><a href="">شروط البيع</a></li>
+                      <li><a href="">سياسه الالغاء</a></li>
+                      <li><a href="">سياسه العائدات</a></li>
+                      <li><a href="">سياسه الشحن</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>عن ريماك</h4>
+                  <ul>
+                      <li><a href="">معلومات عنا</a></li>
+                      <li><a href="">حياه مهنيه</a></li>
+                      <li><a href="">في الاخبار</a></li>
+                      <li><a href="">اتصل بنا</a></li>
+                      <li><a href="">مدونه</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>كن موزعا</h4>
+                  <ul>
+                      <li><a href="">كن موزعا</a></li>
+                      <li><a href="">الشركاء المنتسبين</a></li>
+                      <li><a href="">طلب بالجمله</a></li>
+                      <li><a href="">EMI</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>تعليمات</h4>
+                  <ul>
+                      <li><a href="">ترتيب المسار</a></li>
+                      <li><a href="">ضمان المطالبه</a></li>
+                      <li><a href="">خيارات الدفع</a></li>
+                      <li><a href="">التعليمات</a></li>
+                      <li><a href="">خريطه الموقع</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <li><img src="img/logoRimak.png" class="w-100 imgFoter" alt=""></li>
+              </div>
+          </div>
+          <hr class="w-100 bg-white">
+      </div>
+      
+      <div class="rowF text-right">
+          <div class="socialLinFotter">
+              <ul>
+                  <li><img src="img/icons8-instagram-30.png" alt=""></li>
+                  <li><img src="img/icons8-youtube-30.png" alt=""></li>
+                  <li><img src="img/facb.png" alt=""></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+ </footer>
+
+ 
+   
+ <div class="modal fade mt-5 pt-5 text-right" role="dialog" id="loginModel">
+  <div class="modal-dialog text-right">
+    
+    <div class="modal-content">
+      <div class="modal-header bglogNow">
+        <h3 class="modal-title" >تسجيل الدخول</h3>
+        <div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      </div>
+      <ul class="social-model-login">
+        <li><img src="img/facebookLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+      </ul>
+
+         <div class="modal-body">
+           <div class="form-group">
+            <input type="email" name="username" class="form-control" placeholder="البريد الإلكتروني">
+           </div>
+
+           <div class="form-group">
+             <input type="password" name="password" class="form-control" placeholder="كلمه السر">
+            </div>
+            <a href=""  type="button" class="text-dark" data-toggle="modal" data-target="#forgetpassModel">هل نسيت كلمه المرور؟</a>
+         </div>
+
+         <div class="modal-footer">
+          <button type="submit" class="btn LogInNow w-100">تسجيل الدخول</button>
+         </div>
+     </div>
+ </div>
+</div>
+
+<div class="modal fade mt-5 pt-5 pr-3 text-right" role="dialog" id="forgetpassModel">
+<div class="modal-dialog text-right">
+  
+  <div class="modal-content">
+    <div class="modal-header ">
+      <h3 class="modal-title">نسيت كلمه المرور</h3>
+      <div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+       </div>
+       <br>
+
+       <div class="modal-body">
+         <div class="form-group">
+            <input type="email" name="username" class="form-control" placeholder="البريد الإلكتروني">
+         </div>
+
+          <a href=""  type="button" class="text-dark" data-toggle="modal" data-target="#forgetpassModel">سيتم إرسال رمز التحقق لبريدك الالكتروني</a>
+       </div>
+       <br>
+       <br>
+
+       <div class="modal-footer">
+        <button type="submit" class="btn LogInNow w-100">ارسال رمز التحقق</button>
+        <br>
+        <br>
+       </div>
+   </div>
+</div>
+</div>
+
+<div class="modal fade mt-5 pt-5 text-right" role="dialog" id="signupModel">
+<div class="modal-dialog text-right">
+  <div class="modal-content">
+    <div class="modal-header bglogNow">
+      <h3 class="modal-title">انشاء حساب</h3>
+      <div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+       </div>
+       <ul class="social-model-login">
+        <li><img src="img/facebookLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+      </ul>
+
+       <div class="modal-body">
+         <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني">
+        </div>
+        <div class="form-group">
+          <input type="tel" name="email" class="form-control" placeholder="رقم الجوال">
+        </div>
+
+         <div class="form-group">
+           <input type="password" name="password" class="form-control" placeholder="كلمه السر">
+         </div>
+         <div class="form-group">
+          <input type="password" name="password" class="form-control" placeholder="تاكيد كلمه السر">
+        </div>
+       </div>
+
+       <div class="modal-footer">
+         <button type="submit" class="btn LogInNow w-100">انشاء حساب </button>
+       </div>
+   </div>
+</div>
+</div>
+
+   
+<div class="modal fade mt-5 pt-5 text-right" role="dialog" id="profileModel">
+  <div class="modal-dialog text-right">
+    
+    <div class="modal-content">
+      <div class="modal-header bglogNow" style="background-color: #000;">
+        <h3 class="modal-title bg-white text-dark" style="border-radius: 5px;" >تسجيل الدخول</h3>
+        <div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      </div>
+         <div class="modal-body" style="background-color: #000;">
+           <div class="form-group">
+            <ul>
+              <li class="nav-link">
+                <img src="img/icons8-user-24.png" width="30" alt="">
+                <a href="" class="text-white">الحساب الشخصي</a></li>
+            </ul>
+           </div>
+           <div class="form-group">
+            <ul>
+              <li class="nav-link">
+              <img src="img/add-cart.png" width="30" alt="">
+              <a href="" class="text-white">عربه التسوق</a>
+              </li>
+            </ul>
+           </div>
+           <div class="form-group">
+            <ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="img/language.png" width="30px" alt="">
+                  </a>
+                  <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item  text-right" href="#">العربيه</a>
+                    <a class="dropdown-item  text-right" href="#">الاجنبيه</a>
+                  </div>
+              </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+           </div>
+         </div>
+     </div>
+ </div>
+</div>
+
+
+
+<div class="container-fluid mobileBarcon bg-white" style="border-bottom: 3px solid #000;">
+  <ul class="list-group list-group-horizontal w-100 fayrouzbk">
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/homemobapp.png" width="20px" alt="">الرئيسيه</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/listmob.png" width="20px" alt="">القائمه</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/shopping-cartmob.png" width="20px" alt="">العربيه</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/usermob.png" width="20px" alt="">حسابي</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/magnifying-glass.png" width="20px" alt="">بحث</li>
+  </ul>
+</div>
+
+<span class="upTop">up</span>
+  <script src="js/app.js"></script>
+  <script>
+    let span = document.querySelector(".upTop");
+      window.onscroll = function (){
+        this.scrollY >= 500 ? span.classList.add("showUp") : span.classList.remove("showUp")
+    };
+    span.onclick = function (){
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  </script>
+</body>
+</html>

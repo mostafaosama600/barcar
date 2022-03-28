@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap Links -->
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.6.1-dist/js/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/popper.min.js"></script>
+    <script src="bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <!-- Font Aweasome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fav Icon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>RIMAK</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-transparent" style="background-color: #000; color: #fff !important; position: fixed; z-index: 1000; width: 100%;">
+    <a class="navbar-brand text-white" data-toggle="modal" data-target="#profileModel" href="#"><img src="img/icons8-user-24.png" width="30px" alt=""></a>
+    <a class="navbar-brand text-white" href="#"><img src="img/logo.png" width="30px" alt=""></a>
+    
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "><img src="img/menu.png" alt=""></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <br>
+      <ul class="navbar-nav mr-auto text-right">
+        <li class="nav-item">
+          <button type="button" class="btn border mb-2 text-white resPLogo text-left" data-toggle="modal" data-target="#loginModel">تسجيل</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn border  text-white resPLogo text-left" data-toggle="modal" data-target="#signupModel">تسجيل الدخول</button>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" style="font-size: 13px;" href="#">منطقه العرض</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 13px;" href="#">تسوق بالسياره</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            التصميم الداخلي
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"  style="font-size: 13px;"href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            الخارجيات
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            اضواء السياره
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            تصفيف السياره
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            العنايه بالسياره
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            معدات الدراجه
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            ملحقات القياده
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="font-size: 13px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            اكسسوارات الدراجه
+          </a>
+          <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item " href="#">Action</a>
+            <a class="dropdown-item " href="#">Another action</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+
+<div class="container-fluid">
+  <div class="row" style="background-color: #000;">
+
+    <div class="col mb-2 a7aaaaa">
+      <div class="card cxsaa">
+        <ul class="navbar-nav text-right" style="background-color: #fff;">
+          <li class="nav-item">
+            <button type="button" class="btn border mb-2 text-white resPLogo text-left" data-toggle="modal" data-target="#loginModel">تسجيل</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn border  text-white resPLogo text-left" data-toggle="modal" data-target="#signupModel">تسجيل الدخول</button>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" style="font-size: 14px; color: #000;" href="#">منطقه العرض</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: 14px; color: #000;" href="#">تسوق بالسياره</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 14px; color: #000;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              التصميم الداخلي
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  style="font-size: 14px; color: #000;"href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              الخارجيات
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 14px; color: #000;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              اضواء السياره
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 14px; color: #000;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              تصفيف السياره
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 14px; color: #000;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              العنايه بالسياره
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 14px; color: #000;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              معدات الدراجه
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+  
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="font-size: 14px; color: #000;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              ملحقات القياده
+            </a>
+            <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item " href="#">Action</a>
+              <a class="dropdown-item " href="#">Another action</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-10 pt-3">
+      <div class="card " style="border: 0px; border-radius: 13px;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" style="border-radius: 13px; border: 1px solid snow;">
+            <div class="carousel-item active">
+              <img src="img/download (2).webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/download (2).webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/download (2).webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+         <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid hodds" style="background-color: #000;">
+  <div class="row row-cols-3 row-cols-md-3">
+    <div class="col mb-4 text-center">
+      <div class="cards">
+        <div class="card-body">
+          <img src="img/free.png" class="snoopDog" width="20px" alt="">
+          <h6 class="card-title insanss text-white westcost">خدمه توصيل مجاني</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 text-center">
+      <div class="cards">
+        <div class="card-body">
+          <img src="img/free.png" class="snoopDog" width="20px" alt="">
+          <h6 class="card-title insanss text-white westcost">خدمه توصيل مجاني</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 text-center">
+      <div class="cards">
+        <div class="card-body">
+          <img src="img/free.png" class="snoopDog" width="20px" alt="">
+          <h6 class="card-title insanss text-white westcost">خدمه توصيل مجاني</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <br> -->
+<div class="container-fluid mt-3"style="background-color: #000;">
+  <div class="row row-cols-2 row-cols-md-2">
+    <div class="col mb-4  text-center">
+      <div class="card text-right" style="background-color: #000;">
+        <div class="card-body">
+          <h6 class="card-title text-white nobss">اختر سيارتك</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 text-center">
+      <div class="card text-left" style="background-color: #000;">
+        <div class="card-body">
+          <button class="btn btnAbdelha m-2"> <img src="img/car.png" class="imargnce" width="30px" alt=""> اثنان عجلات</button>
+          <button class="btn btnAbdelha m-2"> <img src="img/car.png" class="imargnce" width="30px" alt=""> اربعه عجلات</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3" style="margin-top: -20px;">
+    <div class="col mb-4 text-center cazy">
+      <div class="card" style="background-color: #000;">
+        <div class="card-body">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>اختر العلامه التجاريه</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 text-center cazy">
+      <div class="card" style="background-color: #000;">
+        <div class="card-body">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>اختر الموديل</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4 text-center cazy">
+      <div class="card" style="background-color: #000;">
+        <div class="card-body">
+          <button class="btn btnSearchs w-100">حدد الملحقات</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section class="section advert bg-white" style="margin-top: -14rem;">
+      <div class="advert-layout container-fluid pt-3">
+        <div class="item">
+          <img src="img/promo-final.png" alt="">
+          <div class="content left text-right">
+            <span>منتجاتنا</span>
+            <h3>تفاصيل المنتج</h3>
+            <a href="">مشاهدة المجموعة</a>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="img/promo7h.png" alt="">
+          <div class="content right text-right">
+            <span>عرض خاص 20%</span>
+            <h3>كراسي سيارات فاخره</h3>
+            <a href="">تسوق بحب</a>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+
+
+      <div class="container-fluid bg-white newSecCC">
+        <div class="titleFour text-center">
+          <h2>مجموعة المتجر خارج السيارة</h2>
+          <span>اختر من بين المنتجات المتميزة ووفر أموالك</span>
+        </div>
+        <div class="row row-cols-2 row-cols-md-4">
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img src="img/carseat.webp" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <a href="" class="">مظلات السيارات</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-white newSecCC">
+    <div class="titleFour text-center">
+      <h2>مجموعة المتجر داخل السيارة</h2>
+      <span>اختر من بين المنتجات المتميزة ووفر أموالك</span>
+    </div>
+    <div class="row row-cols-2 row-cols-md-4">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <a href="" class="">مظلات السيارات</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-white bgHomePage">
+    <img src="img/download.webp" alt="...">
+  </div>
+
+  <div class="container-fluid bg-white">
+    <div class="titleFour text-center">
+      <h2>مجموعة المتجر داخل السيارة</h2>
+      <span>اختر من بين المنتجات المتميزة ووفر أموالك</span>
+    </div>
+    <div class="row row-cols-md-3 row-cols-md-4">
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+      <div class="col mb-4 p-2">
+        <div class="card">
+          <img src="img/carseat.webp" class="card-img-top" alt="...">
+          <div class="card-body text-right">
+            <a href="" style="font-size: 15px;">مظلات السيارات</a>
+            <div class="text-right">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+              <img src="img/star.png" width="10px" alt="">
+            </div>
+            <div class="divUlListFour" style="margin-right: 10px;">
+              <ul class="ullistFive" style="margin-right: -50px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="specialPrice">
+                <li>$49.50</li>
+              </ul>
+            </div>
+            <div class=" divUlListFour">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <li><a href="">تفاصيل المنتج</a></li>
+              </ul>
+              <ul class="oldPrice">
+                <li>$55.50</li>
+              </ul>
+            </div>
+            <div class="vbnn">
+              <button class="btn w-100">اضف الي السله</button>
+            </div>
+            <div class=" divUlListFour butttttt">
+              <ul class="ullistFive" style="margin-right: -40px;">
+                <button class="btn btnCombonentfive"><img src="img/add-cart.png" width="22px" alt=""> اضف الي السلة</button>
+              </ul>
+              <ul class="oldPrice">
+                <li class="borderHeart"><img src="img/heart.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+         
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="mainss">
+    <div class="slide-container">
+    <img id="slide-left" class="arrow" src="img/next.png">
+<div class="container-fluid divS" id="slider">
+    
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <img src="img/carseat.webp">
+        <div class="product-details">
+            <h2>مظلات السيارات</h2>
+            <p> <span>$39.99</span> $29.99</p>
+        </div>
+    </div>
+</div>
+<img id="slide-right" class="arrow" src="img/left-arrow.png">
+</div>
+</div>
+
+
+<footer class="footerF">
+  <div class="containerF">
+      <hr class="w-100 bg-white">
+      <br>
+      <div class="rowF text-right">
+          <div class="footer-col">
+              <h4>ريماك</h4>
+              <ul>
+                  <li><a href="">سياسه الخصوصيه</a></li>
+                  <li><a href="">شروط البيع</a></li>
+                  <li><a href="">سياسه الالغاء</a></li>
+                  <li><a href="">سياسه العائدات</a></li>
+                  <li><a href="">سياسه الشحن</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>عن ريماك</h4>
+              <ul>
+                  <li><a href="">معلومات عنا</a></li>
+                  <li><a href="">حياه مهنيه</a></li>
+                  <li><a href="">في الاخبار</a></li>
+                  <li><a href="">اتصل بنا</a></li>
+                  <li><a href="">مدونه</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>كن موزعا</h4>
+              <ul>
+                  <li><a href="">كن موزعا</a></li>
+                  <li><a href="">الشركاء المنتسبين</a></li>
+                  <li><a href="">طلب بالجمله</a></li>
+                  <li><a href="">EMI</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>تعليمات</h4>
+              <ul>
+                  <li><a href="">ترتيب المسار</a></li>
+                  <li><a href="">ضمان المطالبه</a></li>
+                  <li><a href="">خيارات الدفع</a></li>
+                  <li><a href="">التعليمات</a></li>
+                  <li><a href="">خريطه الموقع</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <li><img src="img/logoRimak.png" class="w-100 imgFoter" alt=""></li>
+          </div>
+      </div>
+      <hr class="w-100 bg-white">
+  </div>
+  
+  <div class="rowF text-right">
+      <div class="socialLinFotter">
+          <ul>
+              <li><img src="img/icons8-instagram-30.png" alt=""></li>
+              <li><img src="img/icons8-youtube-30.png" alt=""></li>
+              <li><img src="img/facb.png" alt=""></li>
+          </ul>
+      </div>
+  </div>
+</div>
+</footer>
+
+
+   
+<div class="modal fade mt-5 pt-5 text-right" role="dialog" id="profileModel">
+  <div class="modal-dialog text-right">
+    
+    <div class="modal-content">
+      <div class="modal-header bglogNow" style="background-color: #000;">
+        <h3 class="modal-title bg-white text-dark" style="border-radius: 5px;" >تسجيل الدخول</h3>
+        <div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      </div>
+         <div class="modal-body" style="background-color: #000;">
+           <div class="form-group">
+            <ul>
+              <li class="nav-link">
+                <img src="img/icons8-user-24.png" width="30" alt="">
+                <a href="" class="text-white">الحساب الشخصي</a></li>
+            </ul>
+           </div>
+           <div class="form-group">
+            <ul>
+              <li class="nav-link">
+              <img src="img/add-cart.png" width="30" alt="">
+              <a href="" class="text-white">عربه التسوق</a>
+              </li>
+            </ul>
+           </div>
+           <div class="form-group">
+            <ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="img/language.png" width="30px" alt="">
+                  </a>
+                  <div class="dropdown-menu" style="border: 1px solid #fff; background-color: #000;" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item  text-right" href="#">العربيه</a>
+                    <a class="dropdown-item  text-right" href="#">الاجنبيه</a>
+                  </div>
+              </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+           </div>
+         </div>
+     </div>
+ </div>
+</div>
+
+
+<div class="modal fade mt-5 pt-5 text-right" role="dialog" id="loginModel">
+  <div class="modal-dialog text-right">
+    
+    <div class="modal-content">
+      <div class="modal-header bglogNow">
+        <h3 class="modal-title" >تسجيل الدخول</h3>
+        <div>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      </div>
+      <ul class="social-model-login">
+        <li><img src="img/facebookLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+      </ul>
+
+         <div class="modal-body">
+           <div class="form-group">
+            <input type="email" name="username" class="form-control" placeholder="البريد الإلكتروني">
+           </div>
+
+           <div class="form-group">
+             <input type="password" name="password" class="form-control" placeholder="كلمه السر">
+            </div>
+            <a href=""  type="button" class="text-dark" data-toggle="modal" data-target="#forgetpassModel">هل نسيت كلمه المرور؟</a>
+         </div>
+
+         <div class="modal-footer">
+          <button type="submit" class="btn LogInNow w-100">تسجيل الدخول</button>
+         </div>
+     </div>
+ </div>
+</div>
+
+<div class="modal fade mt-5 pt-5 pr-3 text-right" role="dialog" id="forgetpassModel">
+<div class="modal-dialog text-right">
+  
+  <div class="modal-content">
+    <div class="modal-header ">
+      <h3 class="modal-title">نسيت كلمه المرور</h3>
+      <div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+       </div>
+       <br>
+
+       <div class="modal-body">
+         <div class="form-group">
+            <input type="email" name="username" class="form-control" placeholder="البريد الإلكتروني">
+         </div>
+
+          <a href=""  type="button" class="text-dark" data-toggle="modal" data-target="#forgetpassModel">سيتم إرسال رمز التحقق لبريدك الالكتروني</a>
+       </div>
+       <br>
+       <br>
+
+       <div class="modal-footer">
+        <button type="submit" class="btn LogInNow w-100">ارسال رمز التحقق</button>
+        <br>
+        <br>
+       </div>
+   </div>
+</div>
+</div>
+
+<div class="modal fade mt-5 pt-5 text-right" role="dialog" id="signupModel">
+<div class="modal-dialog text-right">
+  <div class="modal-content">
+    <div class="modal-header bglogNow">
+      <h3 class="modal-title">انشاء حساب</h3>
+      <div>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+       </div>
+       <ul class="social-model-login">
+        <li><img src="img/facebookLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+        <li><img src="img/gmailLogin.png" alt=""></li>
+      </ul>
+
+       <div class="modal-body">
+         <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="البريد الإلكتروني">
+        </div>
+        <div class="form-group">
+          <input type="tel" name="email" class="form-control" placeholder="رقم الجوال">
+        </div>
+
+         <div class="form-group">
+           <input type="password" name="password" class="form-control" placeholder="كلمه السر">
+         </div>
+         <div class="form-group">
+          <input type="password" name="password" class="form-control" placeholder="تاكيد كلمه السر">
+        </div>
+       </div>
+
+       <div class="modal-footer">
+         <button type="submit" class="btn LogInNow w-100">انشاء حساب </button>
+       </div>
+   </div>
+</div>
+</div>
+<div class="clsOne">
+  <aside class="followUUS">follow us</aside>
+  <ul>
+     <li><a href="https://www.instagram.com/accounts/login/?"><img src="img/insta.png" alt=""></a></li>
+     <li><a href="https://twitter.com/"><img src="img/twt.png" alt=""></a></li>
+     <li><a href="https://web.whatsapp.com/"><img src="img/icons8-whatsapp-24.png" alt=""></a></li>
+     <li><a href="#"><img src="img/icons8-chat-50.png" alt=""></a></li>
+  </ul>
+</div>
+
+<div class="container-fluid mobileBarcon bg-white style="border-bottom: 3px solid #000;">
+  <ul class="list-group list-group-horizontal w-100 fayrouzbk">
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/homemobapp.png" width="20px" alt="">الرئيسيه</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/listmob.png" width="20px" alt="">القائمه</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/shopping-cartmob.png" width="20px" alt="">العربيه</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/usermob.png" width="20px" alt="">حسابي</li>
+    <li class="list-group-item fayrouz" style="font-size: 8px;"><img src="img/magnifying-glass.png" width="20px" alt="">بحث</li>
+  </ul>
+</div>
+<span class="upTop">up</span>
+  <script src="js/app.js"></script>
+  <script>
+    let span = document.querySelector(".upTop");
+      window.onscroll = function (){
+        this.scrollY >= 500 ? span.classList.add("showUp") : span.classList.remove("showUp")
+    };
+    span.onclick = function (){
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  </script>
+</body>
+</html>
