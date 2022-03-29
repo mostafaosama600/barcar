@@ -743,6 +743,7 @@ select:focus {
   background-color: #f5f7ff;
   margin-top: -70px;
   /* height: 300px; */
+  width: 120%;
 }
 .divUlListsix {
   margin-right: -30px;
@@ -1161,6 +1162,7 @@ ul {
 }
 .resCelectTabsmbt {
   margin-bottom: -20px !important;
+  margin-right: -10px;
 }
 .resSetcoverBoxs {
   margin-top: 2rem !important;
@@ -1169,7 +1171,8 @@ ul {
   width: 100%;
   position: absolute;
   top: 80px;
-  /* left: 2%; */
+  left: 0%;
+  right: 0%;
 }
 .resImagFourCar {
   width: 20px;
@@ -1203,6 +1206,9 @@ ul {
 /*responsive*/
 /* screen iphone */
 @media (max-width: 767px) {
+  .resCelectTabsmbt {
+    margin-right: 0px;
+  }
   .a7aaaaa {
     display: none;
   }
@@ -1272,6 +1278,7 @@ ul {
   }
   .marketSummary {
     margin-top: 0px;
+    width: 100%;
   }
   .resCallushr {
     display: none;
@@ -1464,6 +1471,9 @@ ul {
   display: none;
 }
 @media (max-width: 574px) {
+  .resCelectTabsmbt {
+    margin-right: 0px;
+  }
   .a7aaaaa {
     display: none;
   }
@@ -1555,6 +1565,7 @@ ul {
   }
   .marketSummary {
     margin-top: 0px;
+    width: 100%;
   }
   .resCallushr {
     display: none;
@@ -1677,6 +1688,9 @@ ul {
 
 /* screen Fold */
 @media (max-width: 280px) {
+  .resCelectTabsmbt {
+    margin-right: 0px;
+  }
   .a7aaaaa {
     display: none;
   }
@@ -1916,6 +1930,9 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  .resCelectTabsmbt {
+    margin-right: 0px;
+  }
   .a7aaaaa {
     display: none;
   }
@@ -1944,6 +1961,7 @@ ul {
 
   .marketSummary {
     margin-top: 0px;
+    width: 100%;
   }
   .resPLogo {
     display: none;
